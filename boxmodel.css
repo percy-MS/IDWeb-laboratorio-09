@@ -1,0 +1,105 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    margin-bottom: 40px;
+    font-size: 2.5em;
+}
+
+/* FLEXBOX */
+.cards-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+/* MODELO DE CAJAS - REQUISITO: border, padding y margin */
+.card {
+    background: white;
+    
+    /* BORDER - borde de la tarjeta */
+    border: 4px solid #3498db;
+    border-radius: 8px;
+    
+    /* PADDING - espacio interno (contenido al borde) */
+    padding: 30px;
+    
+    /* MARGIN - espacio externo (separación entre tarjetas) */
+    margin: 15px;
+    
+    /* Dimensiones */
+    width: 280px;
+    min-height: 180px;
+    
+    /* Efectos visuales */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+.card h2 {
+    color: #2c3e50;
+    margin-bottom: 15px;
+    font-size: 1.5em;
+}
+
+.card p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.95em;
+}
+
+/* Enlace de regreso */
+.back-link {
+    display: inline-block;
+    margin-top: 40px;
+    padding: 12px 24px;
+    background: white;
+    color: #667eea;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background 0.3s ease;
+}
+
+.back-link:hover {
+    background: #f0f0f0;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .card {
+        width: 100%;
+        max-width: 400px;
+        margin: 10px 0;
+    }
+}

@@ -1,0 +1,147 @@
+.hero {
+    background-color: #ecf0f1;
+    padding: 80px 20px;
+    margin: 20px;
+    border-radius: 12px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.hero-contenido {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.hero h2 {
+    color: #2c3e50;
+    font-size: 2rem;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    color: #555;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.boton-cta {
+    padding: 15px 40px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.boton-cta:hover {
+    background-color: #2980b9;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.caracteristicas {
+    margin-bottom: 50px;
+}
+
+.caracteristicas h2 {
+    border-bottom: 3px solid #3498db;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    font-size: 1.5rem;
+    color: #2c3e50;
+    text-align: center;
+}
+
+.contenedor-caracteristicas {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.caracteristica {
+    flex: 1;
+    min-width: 200px;
+    padding: 25px;
+    border: 2px solid #3498db;
+    border-radius: 12px;
+    background-color: white;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.caracteristica h3 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+}
+
+.caracteristica p {
+    color: #555;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.cta-secundario {
+    background-color: #ecf0f1;
+    padding: 50px 20px;
+    text-align: center;
+    border-radius: 12px;
+    margin-top: 40px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.cta-secundario h2 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.cta-secundario p {
+    color: #555;
+    font-size: 1rem;
+    margin-bottom: 20px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .hero {
+        padding: 60px 15px;
+        margin: 10px;
+    }
+
+    .hero h2 {
+        font-size: 1.5rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+
+    .caracteristicas h2 {
+        font-size: 1.3rem;
+    }
+
+    .contenedor-caracteristicas {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .caracteristica {
+        min-width: auto;
+    }
+
+    .cta-secundario {
+        padding: 40px 15px;
+    }
+}
